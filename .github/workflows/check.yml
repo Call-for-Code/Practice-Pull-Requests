@@ -13,6 +13,3 @@ jobs:
     - name: Typo fixed
       run: |
         cat FIX_TYPO.md | grep "typo"
-    - name: Typo not fixed
-      run: |
-        cat FIX_TYPO.md | grep "tyop"
