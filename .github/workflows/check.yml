@@ -15,4 +15,4 @@ jobs:
         cat FIX_TYPO.md | grep "typo"
     - name: Typo not fixed
       run: |
-        cat FIX_TYPO.md | sed -n "/tyop/ p"
+        cat FIX_TYPO.md | grep "tyop"
