@@ -11,10 +11,10 @@ pull_request_rules:
         remove: ['status: needs correction']
   - name: Comment when typo is not fixed
     conditions:
-      - 'status-failure=Typo not fixed'
+      - 'status-failure=Typo fixed'
     actions:
       comment:
         message:
-          'Hi, it looks like did not fix the typoe in your pull request. Double check your pull request.'
+          'Hi, it looks like did not fix the typo in your pull request. Double check your pull request.'
       label:
         add: ['status: needs correction']
