@@ -1,20 +1,18 @@
 pull_request_rules:
   - name: Close when typo is fixed
     conditions:
-      - 'check-success=Run test'
+      - "check-success=Run test"
     actions:
       close:
-        message:
-          'Looks good - you submitted a pull request that fixes the typo! It will now be automatically closed to allow others to try.'
+        message: "Looks good - you submitted a pull request that fixes the typo! It will now be automatically closed to allow others to try."
       label:
-        add: ['status: approved']
-        remove: ['status: needs correction']
+        add: ["status: approved"]
+        remove: ["status: needs correction"]
   - name: Comment when typo is not fixed
     conditions:
-      - 'check-failure=Run test'
+      - "check-failure=Run test"
     actions:
       comment:
-        message:
-          'Hi, it looks like did not fix the typo in your pull request. Double check your pull request.'
+        message: "Hi, it looks like did not fix the typo in your pull request. Double check your pull request."
       label:
-        add: ['status: needs correction']
+        add: ["status: needs correction"]
