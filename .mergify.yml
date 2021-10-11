@@ -1,5 +1,5 @@
 pull_request_rules:
-  - name: Close when CI Passes Step 1
+  - name: Close when typo is fixed
     conditions:
       - 'status-success=Typo fixed'
     actions:
@@ -9,7 +9,7 @@ pull_request_rules:
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
-  - name: Comment when CI fails Step 1
+  - name: Comment when typo is not fixed
     conditions:
       - 'status-failure=Typo not fixed'
     actions:
