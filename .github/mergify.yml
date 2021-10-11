@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: Close when typo is fixed
     conditions:
-      - 'status-success=Typo fixed'
+      - 'check-success=Run test'
     actions:
       close:
         message:
@@ -11,7 +11,7 @@ pull_request_rules:
         remove: ['status: needs correction']
   - name: Comment when typo is not fixed
     conditions:
-      - 'status-failure=Typo fixed'
+      - 'check-failure=Run test'
     actions:
       comment:
         message:
