@@ -1,1 +1,1 @@
-# A file with a tyop
+# A file with a typo
