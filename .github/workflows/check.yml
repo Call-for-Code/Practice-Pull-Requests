@@ -1,0 +1,18 @@
+on:
+  [pull_request]
+
+name: Check
+
+jobs:
+  check:
+    name: Run test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Typo fixed
+      run: |
+        cat FIX_TYPO.md | grep "typo"
+    - name: Typo not fixed
+      run: |
+        cat FIX_TYPO.md | grep sed -n "/tyop/ p"
