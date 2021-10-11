@@ -11,7 +11,7 @@ pull_request_rules:
         remove: ['status: needs correction']
   - name: Comment when CI fails Step 1
     conditions:
-      - 'status-success=Typo not fixed'
+      - 'status-failure=Typo not fixed'
     actions:
       comment:
         message:
