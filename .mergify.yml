@@ -1,7 +1,20 @@
 pull_request_rules:
-  - name: Automatic merge on approval
+  - name: Close when CI Passes Step 1
     conditions:
-      - "#approved-reviews-by>=1"
+      - 'status-success=Typo fixed'
     actions:
-      merge:
-        method: merge
+      close:
+        message:
+          'Looks good - you submitted a pull request that fixes the typo! It will now be automatically closed to allow others to try.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 1
+    conditions:
+      - 'status-success=Typo not fixed'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like did not fix the typoe in your pull request. Double check your pull request.'
+      label:
+        add: ['status: needs correction']
