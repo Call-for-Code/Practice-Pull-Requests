@@ -1,6 +1,6 @@
 # Practicing GitHub pull requests
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Community](https://img.shields.io/badge/Join-Community-blue)](https://callforcode.org/slack/)
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/static/v1?label=Community&message=%23open-source-general&color=blue)](https://callforcode.org/slack)
 
 If you're new to GitHub and want to get involved with an open source community like [Call for Code](https://github.com/Call-for-Code/Project-Catalog), the process for adding code or text contributions to a particular project can be a bit daunting.
 
