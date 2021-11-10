@@ -24,23 +24,43 @@ Each Call for Code project typically has at four files in it that describe how n
 
 1. On the top right of this repository, click the "Fork" button to create a copy in your account.
 
+   ![Fork](img/2-fork.png)
+
 1. Click on the `FIX_TYPO.md` in your copy.
 
 1. Click on the pencil icon in the edit bar for the file.
 
-1. Fix the typo commit to your main branch (this is the main branch in your fork).
+   ![Edit](img/4-edit.png)
+
+1. Fix the typo
+
+   ![Fix](img/5-fix.png)
+
+1. Commit to a new branch in your fork.
+
+   ![Commit](img/5-commit.png)
 
 1. Back on the main page of your fork, you should now see a message that your code is newer than the original repo.
 
+   ![Fix](img/6-diff.png)
+
 1. Click "Contribute", then "Open pull request".
 
-1. Review the changes which should look like this, then click "Create pull request".
+   ![Fix](img/7-pr.png)
+
+1. Review the changes which should look like this, then click "Create pull request". Make sure that it's comparing your branch with the original `main` branch in the upstream **Call-for-Code** repository, not the `main` branch of your fork.
+
+   ![Fix](img/8-pr.png)
 
 1. The pull request (proposed change for the main repository to accept) will then be opened.
 
 1. One of two things will happen, either the Mergify workflow will tell you were successful.
 
+   ![Fix](img/10-success.png)
+
 1. Otherwise it will tell you to try again.
+
+   ![Fix](img/11-fail.png)
 
 ## Next steps
 
