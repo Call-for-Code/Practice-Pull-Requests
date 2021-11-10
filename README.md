@@ -36,7 +36,7 @@ Each Call for Code project typically has at four files in it that describe how n
 
    ![Fix](img/5-fix.png)
 
-1. Commit to a new branch in your fork.
+1. Commit to a new branch in your fork by clicking "Propose changes".
 
    ![Commit](img/5-commit.png)
 
@@ -49,6 +49,8 @@ Each Call for Code project typically has at four files in it that describe how n
    ![Fix](img/7-pr.png)
 
 1. Review the changes which should look like this, then click "Create pull request". Make sure that it's comparing your branch with the original `main` branch in the upstream **Call-for-Code** repository, not the `main` branch of your fork.
+
+   > Note: The screenshot actually shows it comparing my `main` to the upstream `main`, but it should show `krook-patch-1`.
 
    ![Fix](img/8-pr.png)
 
