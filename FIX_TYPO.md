@@ -1,4 +1,4 @@
-# A file with a tyop
+# A file with a typo
 
 To practice using GitHub to contribute to one of our Call for Code open source projects, you can edit this file to fix the typo in the heading and create a pull request.
 
